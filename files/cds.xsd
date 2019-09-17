@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tPreco">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="tFaixas">
+        <xs:sequence>
+            <xs:element name="faixa" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tCd">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="artista" type="xs:string"/>
+            <xs:element name="gravadora" type="xs:string"/>
+            <xs:element name="faixas" type="tFaixas"/>
+            <xs:element name="preco" type="tPreco"/>
+        </xs:sequence>
+        <xs:attribute name="ano" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="tCds">
+        <xs:sequence>
+            <xs:element name="cd" type="tCd" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="catalogo" type="tCds"/>
+
+</xs:schema>

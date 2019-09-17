@@ -1,0 +1,15 @@
+<!ELEMENT lines (line+)>
+        <!ELEMENT line (name, url_name, color, city)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT url_name (#PCDATA)>
+        <!ELEMENT color (#PCDATA)>
+        <!ELEMENT city (city_name, coords, start_year, url_city_name, country, country_state)>
+            <!ELEMENT city_name (#PCDATA)>
+            <!ELEMENT coords (#PCDATA)>
+            <!ELEMENT start_year (#PCDATA)>
+            <!ELEMENT url_city_name (#PCDATA)>
+            <!ELEMENT country (#PCDATA)>
+            <!ELEMENT country_state (#PCDATA)>
+            <!ATTLIST city city_id CDATA #REQUIRED>
+        <!ATTLIST line id CDATA #REQUIRED>
+

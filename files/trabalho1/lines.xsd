@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="tCity">
+        <xs:sequence>
+            <xs:element name="city_name" type="xs:string"/>
+            <xs:element name="coords" type="xs:string"/>
+            <xs:element name="start_year" type="xs:int"/>
+            <xs:element name="url_city_name" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="country_state" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="city_id" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="tLine">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="url_name" type="xs:string"/>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="city" type="tCity"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="tLines">
+        <xs:sequence>
+            <xs:element name="line" type="tLine" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="lines" type="tLines"/>
+
+</xs:schema>

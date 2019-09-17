@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--<!DOCTYPE livros SYSTEM "livros.dtd">-->
+<livros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="livros.xsd">
+    <livro ano = "2015">
+        <editora>Saraiva</editora>
+        <titulo>A morte dos que não foram</titulo>
+        <edicao>volume 2</edicao>
+        <isbn>1234</isbn>
+        <autores>
+            <autor>
+                <nome>Chico da silva</nome>
+                <endereco>rua são paulo, ceara</endereco>
+            </autor>
+            <autor>
+                <nome>Carlos Drumond de Andrade</nome>
+                <endereco>AV central, ceara</endereco>
+            </autor>
+        </autores>
+    </livro>
+
+    <livro ano = "1995">
+        <editora>Abril</editora>
+        <titulo>Seca do 666</titulo>
+        <edicao>volume 1</edicao>
+        <isbn>12341</isbn>
+        <autores>
+            <autor>
+                <nome>O medico</nome>
+                <endereco>rua medicina, piratininga</endereco>
+            </autor>
+            <autor>
+                <nome>Rei el Dourado</nome>
+                <endereco>Zukemberg, Austria</endereco>
+            </autor>
+        </autores>
+    </livro>
+
+    <livro ano = "2003">
+        <editora>Mimosa</editora>
+        <titulo>A Vaca Assasina</titulo>
+        <edicao>volume 5</edicao>
+        <isbn>1545</isbn>
+        <autores>
+            <autor>
+                <nome>Seu Jõao</nome>
+                <endereco>Paiol, sertão do sul</endereco>
+            </autor>
+            <autor>
+                <nome>Capataz</nome>
+                <endereco>pirambu, fortaleza</endereco>
+            </autor>
+        </autores>
+    </livro>
+
+</livros>

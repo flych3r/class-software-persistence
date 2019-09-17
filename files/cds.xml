@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE catalogo SYSTEM "cds.dtd">
+<catalogo>
+    <cd ano="2002">
+        <titulo>Dança</titulo>
+        <artista>Rei do sucesso</artista>
+        <gravadora>EMI</gravadora>
+        <faixas>
+            <faixa>Boa</faixa>
+            <faixa>Melhor</faixa>
+        </faixas>
+        <preco>10.00</preco>
+    </cd>
+</catalogo>
