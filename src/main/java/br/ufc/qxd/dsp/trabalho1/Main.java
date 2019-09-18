@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         String ARQUIXO_XML = "/home/flycher/Documentos/intellij/persistencia/files/trabalho1/lines.xml";
+        String ARQUIXO_JSON = "/home/flycher/Documentos/intellij/persistencia/files/trabalho1/lines.json";
 
         List<Line> lines = LinesParser.lines();
 
@@ -14,6 +15,14 @@ public class Main {
         parserDOM.createXML(lines, ARQUIXO_XML);
 
         ParserSAX parserSAX = new ParserSAX();
-        parserSAX.parse(ARQUIXO_XML);
+        List<Line> newLines = parserSAX.parse(ARQUIXO_XML);
+
+        ParserJSON parserJSON = new ParserJSON();
+        parserJSON.saveJSON(newLines, ARQUIXO_JSON);
+
+        List<Line> newNewLines = parserJSON.readJSON(ARQUIXO_JSON);
+
+        for(Line line: newNewLines)
+            System.out.println(line);
     }
 }

@@ -91,7 +91,7 @@ public class ParserDOM {
 
         }
 
-        public void createXML(List<Line> lines, String ARQUIVO_XML_SAIDA) {
+        public void createXML(List<Line> lines, String filePath) {
 
             try {
                 DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
@@ -110,7 +110,7 @@ public class ParserDOM {
                 Transformer transformer = transformerFactory.newTransformer();
                 DOMSource source = new DOMSource(doc);
                 StreamResult result
-                        = new StreamResult(ARQUIVO_XML_SAIDA);
+                        = new StreamResult(filePath);
                 transformer.setOutputProperty(OutputKeys.INDENT,
                         "yes");
                 transformer.setOutputProperty(
