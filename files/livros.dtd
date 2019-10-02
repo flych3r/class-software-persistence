@@ -5,7 +5,7 @@
 <!ELEMENT edicao (#PCDATA)>
 <!ELEMENT isbn (#PCDATA)>
 <!ELEMENT autores (autor+)>
-<!ELEMENT autor (nome, endereco)>
+<!ELEMENT autor (nome, address)>
 <!ELEMENT nome (#PCDATA)>
-<!ELEMENT endereco (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
 <!ATTLIST livro ano CDATA #REQUIRED>

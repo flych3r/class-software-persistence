@@ -1,36 +1,36 @@
 package br.ufc.qxd.dsp.atividade1.dao;
 
-import br.ufc.qxd.dsp.atividade1.entity.Endereco;
+import br.ufc.qxd.dsp.atividade1.entity.Address;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class EnderecoDAO {
+public class AddressDAO {
 
-    public void create(Session session, Endereco endereco) {
+    public void create(Session session, Address address) {
         session.beginTransaction();
-        session.save(endereco);
+        session.save(address);
         session.getTransaction().commit();
     }
 
     public void delete(Session session, Long id) {
-        Endereco endereco = (Endereco) session.find(Endereco.class, id);
+        Address address = (Address) session.find(Address.class, id);
 
         session.beginTransaction();
-        session.delete(endereco);
+        session.delete(address);
         session.getTransaction().commit();
     }
 
-    public Endereco search(Session session, Long id) {
-        Endereco endereco = (Endereco) session.find(Endereco.class, id);
+    public Address search(Session session, Long id) {
+        Address address = (Address) session.find(Address.class, id);
 
-        return endereco;
+        return address;
     }
 
-    public void update(Session session, Endereco endereco) {
+    public void update(Session session, Address address) {
         session.beginTransaction();
-        session.saveOrUpdate(endereco);
+        session.saveOrUpdate(address);
         session.getTransaction().commit();
     }
 

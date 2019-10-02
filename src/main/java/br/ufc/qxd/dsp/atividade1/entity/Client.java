@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "clientes")
-public class Cliente {
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,10 +17,10 @@ public class Cliente {
     private String telefone;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Endereco> enderecos;
+    private List<Address> addresses;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Telefone> telefones;
+    private List<Phone> phones;
 
     public Long getIdCliente() {
         return idCliente;
@@ -46,20 +46,20 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public List<Endereco> getEnderecos() {
-        return enderecos;
+    public List<Address> getAddresses() {
+        return addresses;
     }
 
-    public void setEnderecos(List<Endereco> enderecos) {
-        this.enderecos = enderecos;
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
     }
 
-    public List<Telefone> getTelefones() {
-        return telefones;
+    public List<Phone> getPhones() {
+        return phones;
     }
 
-    public void setTelefones(List<Telefone> telefones) {
-        this.telefones = telefones;
+    public void setPhones(List<Phone> phones) {
+        this.phones = phones;
     }
 
     @Override
@@ -69,8 +69,8 @@ public class Cliente {
                 ", nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", telefone='" + telefone + '\'' +
-                ", enderecos=" + enderecos +
-                ", telefones=" + telefones +
+                ", enderecos=" + addresses +
+                ", telefones=" + phones +
                 '}';
     }
 }

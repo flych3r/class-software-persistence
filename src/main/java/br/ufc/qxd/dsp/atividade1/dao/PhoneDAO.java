@@ -1,36 +1,36 @@
 package br.ufc.qxd.dsp.atividade1.dao;
 
-import br.ufc.qxd.dsp.atividade1.entity.Telefone;
+import br.ufc.qxd.dsp.atividade1.entity.Phone;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class TelefoneDAO {
+public class PhoneDAO {
 
-    public void create(Session session, Telefone telefone) {
+    public void create(Session session, Phone phone) {
         session.beginTransaction();
-        session.save(telefone);
+        session.save(phone);
         session.getTransaction().commit();
     }
 
     public void delete(Session session, Long id) {
-        Telefone telefone = (Telefone) session.find(Telefone.class, id);
+        Phone phone = (Phone) session.find(Phone.class, id);
 
         session.beginTransaction();
-        session.delete(telefone);
+        session.delete(phone);
         session.getTransaction().commit();
     }
 
-    public Telefone search(Session session, Long id) {
-        Telefone telefone = (Telefone) session.find(Telefone.class, id);
+    public Phone search(Session session, Long id) {
+        Phone phone = (Phone) session.find(Phone.class, id);
 
-        return telefone;
+        return phone;
     }
 
-    public void update(Session session, Telefone telefone) {
+    public void update(Session session, Phone phone) {
         session.beginTransaction();
-        session.saveOrUpdate(telefone);
+        session.saveOrUpdate(phone);
         session.getTransaction().commit();
     }
 

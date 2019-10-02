@@ -10,11 +10,11 @@
         <autores>
             <autor>
                 <nome>Chico da silva</nome>
-                <endereco>rua são paulo, ceara</endereco>
+                <address>rua são paulo, ceara</address>
             </autor>
             <autor>
                 <nome>Carlos Drumond de Andrade</nome>
-                <endereco>AV central, ceara</endereco>
+                <address>AV central, ceara</address>
             </autor>
         </autores>
     </livro>
@@ -27,11 +27,11 @@
         <autores>
             <autor>
                 <nome>O medico</nome>
-                <endereco>rua medicina, piratininga</endereco>
+                <address>rua medicina, piratininga</address>
             </autor>
             <autor>
                 <nome>Rei el Dourado</nome>
-                <endereco>Zukemberg, Austria</endereco>
+                <address>Zukemberg, Austria</address>
             </autor>
         </autores>
     </livro>
@@ -44,11 +44,11 @@
         <autores>
             <autor>
                 <nome>Seu Jõao</nome>
-                <endereco>Paiol, sertão do sul</endereco>
+                <address>Paiol, sertão do sul</address>
             </autor>
             <autor>
                 <nome>Capataz</nome>
-                <endereco>pirambu, fortaleza</endereco>
+                <address>pirambu, fortaleza</address>
             </autor>
         </autores>
     </livro>

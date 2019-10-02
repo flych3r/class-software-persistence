@@ -1,22 +1,9 @@
 package br.ufc.qxd.dsp.atividade1;
 
-import br.ufc.qxd.dsp.atividade1.dao.ClienteDAO;
-import br.ufc.qxd.dsp.atividade1.entity.Cliente;
-import br.ufc.qxd.dsp.atividade1.entity.Endereco;
-import br.ufc.qxd.dsp.atividade1.entity.Telefone;
-import com.fasterxml.classmate.AnnotationConfiguration;
 import org.hibernate.HibernateException;
-import org.hibernate.Metamodel;
-import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import javax.persistence.metamodel.EntityType;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class Atividade {
     private static final SessionFactory ourSessionFactory;

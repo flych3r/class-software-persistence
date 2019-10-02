@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "endereco")
-public class Endereco {
+public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,7 @@ public class Endereco {
     private String cidade;
 
     @ManyToMany(mappedBy="enderecos")
-    private List<Cliente> clientes;
+    private List<Client> clients;
 
     public Long getIdEndereco() {
         return idEndereco;
@@ -59,12 +59,12 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public List<Cliente> getClientes() {
-        return clientes;
+    public List<Client> getClients() {
+        return clients;
     }
 
-    public void setClientes(List<Cliente> clientes) {
-        this.clientes = clientes;
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
     }
 
     @Override
@@ -75,7 +75,7 @@ public class Endereco {
                 ", numero='" + numero + '\'' +
                 ", bairro='" + bairro + '\'' +
                 ", cidade='" + cidade + '\'' +
-                ", clientes=" + clientes +
+                ", clientes=" + clients +
                 '}';
     }
 }
