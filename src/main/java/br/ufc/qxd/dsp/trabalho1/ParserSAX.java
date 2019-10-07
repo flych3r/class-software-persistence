@@ -61,7 +61,7 @@ public class ParserSAX extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if(elements.peek().equals("city")) {
+        if (elements.peek().equals("city")) {
             Line line = lineStack.peek();
             line.setCity(cityStack.peek());
         }

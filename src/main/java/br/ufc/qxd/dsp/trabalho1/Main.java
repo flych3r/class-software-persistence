@@ -22,7 +22,7 @@ public class Main {
 
         List<Line> newNewLines = parserJSON.readJSON(ARQUIXO_JSON);
 
-        for(Line line: newNewLines)
+        for (Line line : newNewLines)
             System.out.println(line);
     }
 }

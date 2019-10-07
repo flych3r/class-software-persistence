@@ -20,7 +20,8 @@ public class City {
         this.countryState = countryState;
     }
 
-    public City() {}
+    public City() {
+    }
 
     public Integer getId() {
         return id;

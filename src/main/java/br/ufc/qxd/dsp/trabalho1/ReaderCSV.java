@@ -33,14 +33,14 @@ public class ReaderCSV {
 
     public String[] search(String column, String id) {
         int i = 0;
-        for(String s: allData.get(0)){
-            if(s.equals(column))
+        for (String s : allData.get(0)) {
+            if (s.equals(column))
                 break;
             i++;
         }
 
-        for(String[] linha: allData){
-            if(linha[i].equals(id))
+        for (String[] linha : allData) {
+            if (linha[i].equals(id))
                 return linha;
         }
 

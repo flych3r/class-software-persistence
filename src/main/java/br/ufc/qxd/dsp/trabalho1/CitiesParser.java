@@ -12,7 +12,7 @@ public class CitiesParser {
         List<String[]> cities = reader.getAllData();
         Map<Integer, City> citiesMap = new HashMap<Integer, City>();
 
-        for(String[] city: cities) {
+        for (String[] city : cities) {
             Integer id;
             try {
                 id = Integer.parseInt(city[0]);

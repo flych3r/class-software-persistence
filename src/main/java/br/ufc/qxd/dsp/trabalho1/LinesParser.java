@@ -13,7 +13,7 @@ public class LinesParser {
         List<String[]> lines = reader.getAllData();
         List<Line> linesList = new ArrayList<Line>();
 
-        for(String[] line: lines) {
+        for (String[] line : lines) {
             Integer id = Integer.parseInt(line[0]);
             Integer cityId = Integer.parseInt(line[1]);
             City city = cities.get(cityId);

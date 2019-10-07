@@ -16,7 +16,8 @@ public class Line {
         this.color = color;
     }
 
-    public Line() {}
+    public Line() {
+    }
 
     public Integer getId() {
         return id;
