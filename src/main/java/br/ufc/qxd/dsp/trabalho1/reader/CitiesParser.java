@@ -1,4 +1,6 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.reader;
+
+import br.ufc.qxd.dsp.trabalho1.entity.City;
 
 import java.util.HashMap;
 import java.util.List;

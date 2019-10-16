@@ -1,5 +1,6 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.parser;
 
+import br.ufc.qxd.dsp.trabalho1.entity.Line;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

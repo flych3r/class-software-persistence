@@ -1,5 +1,7 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.parser;
 
+import br.ufc.qxd.dsp.trabalho1.entity.City;
+import br.ufc.qxd.dsp.trabalho1.entity.Line;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;

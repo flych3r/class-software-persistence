@@ -1,5 +1,6 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.parser;
 
+import br.ufc.qxd.dsp.trabalho1.entity.Line;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

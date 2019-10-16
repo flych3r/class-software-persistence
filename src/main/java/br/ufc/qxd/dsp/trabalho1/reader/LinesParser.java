@@ -1,4 +1,7 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.reader;
+
+import br.ufc.qxd.dsp.trabalho1.entity.City;
+import br.ufc.qxd.dsp.trabalho1.entity.Line;
 
 import java.util.ArrayList;
 import java.util.List;

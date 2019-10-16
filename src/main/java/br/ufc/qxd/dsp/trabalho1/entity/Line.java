@@ -1,4 +1,4 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.entity;
 
 public class Line {
 

@@ -1,5 +1,11 @@
 package br.ufc.qxd.dsp.trabalho1;
 
+import br.ufc.qxd.dsp.trabalho1.entity.Line;
+import br.ufc.qxd.dsp.trabalho1.parser.ParserDOM;
+import br.ufc.qxd.dsp.trabalho1.parser.ParserJSON;
+import br.ufc.qxd.dsp.trabalho1.parser.ParserSAX;
+import br.ufc.qxd.dsp.trabalho1.reader.LinesParser;
+
 import java.util.List;
 
 public class Main {

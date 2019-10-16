@@ -1,4 +1,4 @@
-package br.ufc.qxd.dsp.trabalho1;
+package br.ufc.qxd.dsp.trabalho1.reader;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
