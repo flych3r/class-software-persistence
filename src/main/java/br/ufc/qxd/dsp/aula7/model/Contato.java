@@ -1,11 +1,12 @@
 package br.ufc.qxd.dsp.aula7.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Contato.findAll", query = "from Contato"),
+        @NamedQuery(name = "Contato.findByName", query = "from Contato c where c.nome = :nome"),
+})
 public class Contato {
 
     @Id
@@ -14,13 +15,10 @@ public class Contato {
 
     private String nome;
 
-    private String telefone;
-
     public Contato() {}
 
-    public Contato(String nome, String telefone) {
+    public Contato(String nome) {
         this.nome = nome;
-        this.telefone = telefone;
     }
 
     public Integer getId() {
@@ -39,20 +37,11 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
     @Override
     public String toString() {
         return "Contato{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", telefone='" + telefone + '\'' +
                 '}';
     }
 }

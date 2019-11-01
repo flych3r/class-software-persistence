@@ -2,6 +2,7 @@ package br.ufc.qxd.dsp.aula7;
 
 import br.ufc.qxd.dsp.aula7.dao.ContatoDAO;
 import br.ufc.qxd.dsp.aula7.dao.jpa.ContatoJPADAO;
+import br.ufc.qxd.dsp.aula7.jpa.JPAUtil;
 import br.ufc.qxd.dsp.aula7.model.Contato;
 
 import javax.persistence.*;
@@ -13,9 +14,9 @@ public class JPA {
         ContatoDAO cDAO = new ContatoJPADAO();
         try {
             cDAO.beginTransaction();
-            cDAO.save(new Contato("Ronaldo", "999"));
-            cDAO.save(new Contato("Mary", "100"));
-            cDAO.save(new Contato("Junior", "333"));
+            cDAO.save(new Contato("Ronaldo"));
+            cDAO.save(new Contato("Mary"));
+            cDAO.save(new Contato("Junior"));
             cDAO.commit();
         } catch (IllegalStateException | PersistenceException e) {
             cDAO.rollBack();
@@ -53,11 +54,36 @@ public class JPA {
         System.out.println("****************************");
     }
 
+    public static void searchDAO(String nome) {
+        ContatoDAO cDAO = new ContatoJPADAO();
+        List<Contato> contatos = cDAO.findByName(nome);
+        cDAO.close();
+
+        for(Contato c: contatos)
+            System.out.println(c);
+
+        System.out.println("|||||||||||||||||||||||||||");
+    }
+
+    public static void searchPagination() {
+        EntityManager em = JPAUtil.getEntityManager();
+        List<Contato> contatos = em.createQuery("from Contato")
+                .setFirstResult(2)
+                .setMaxResults(3)
+                .getResultList();
+        JPAUtil.closeEntityManager();
+
+        for(Contato c: contatos)
+            System.out.println(c);
+
+        System.out.println("__________________________");
+    }
+
     public static void main(String[] args) {
 
 //        insertDAO();
 //        deleteDAO();
-        searchDAO();
+//        searchDAO();
 
         System.out.println("+===============================+");
         System.out.println("FIM - JPA");
