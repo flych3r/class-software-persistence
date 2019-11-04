@@ -1,8 +1,8 @@
 package br.ufc.qxd.dsp.trabalho2.dao;
 
-import model.Departamento;
-import model.Funcionario;
-import model.Projeto;
+import br.ufc.qxd.dsp.trabalho2.model.Departamento;
+import br.ufc.qxd.dsp.trabalho2.model.Funcionario;
+import br.ufc.qxd.dsp.trabalho2.model.Projeto;
 
 import java.util.List;
 

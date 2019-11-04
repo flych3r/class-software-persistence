@@ -1,10 +1,10 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.DepartamentoDAO;
-import jpa.JPAUtil;
-import model.Departamento;
-import model.Funcionario;
-import model.Projeto;
+import br.ufc.qxd.dsp.trabalho2.dao.DepartamentoDAO;
+import br.ufc.qxd.dsp.trabalho2.jpa.JPAUtil;
+import br.ufc.qxd.dsp.trabalho2.model.Departamento;
+import br.ufc.qxd.dsp.trabalho2.model.Funcionario;
+import br.ufc.qxd.dsp.trabalho2.model.Projeto;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

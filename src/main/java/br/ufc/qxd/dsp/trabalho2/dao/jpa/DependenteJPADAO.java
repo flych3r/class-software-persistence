@@ -1,9 +1,8 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.DependenteDAO;
-import jpa.JPAUtil;
-import model.Dependente;
-import model.Funcionario;
+import br.ufc.qxd.dsp.trabalho2.dao.DependenteDAO;
+import br.ufc.qxd.dsp.trabalho2.jpa.JPAUtil;
+import br.ufc.qxd.dsp.trabalho2.model.Dependente;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

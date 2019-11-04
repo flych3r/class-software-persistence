@@ -1,16 +1,13 @@
 package br.ufc.qxd.dsp.trabalho2;
 
-import dao.DepartamentoDAO;
-import dao.PesquisadorDAO;
-import dao.jpa.DepartamendoJPADAO;
-import dao.jpa.PesquisadorJPADAO;
-import jpa.JPAUtil;
-import model.Departamento;
-import model.Endereco;
-import model.Funcionario;
-import model.Pesquisador;
-import util.Menu;
-//import util.Menu;
+
+import br.ufc.qxd.dsp.trabalho2.dao.DepartamentoDAO;
+import br.ufc.qxd.dsp.trabalho2.dao.PesquisadorDAO;
+import br.ufc.qxd.dsp.trabalho2.dao.jpa.DepartamendoJPADAO;
+import br.ufc.qxd.dsp.trabalho2.dao.jpa.PesquisadorJPADAO;
+import br.ufc.qxd.dsp.trabalho2.model.Departamento;
+import br.ufc.qxd.dsp.trabalho2.model.Funcionario;
+import br.ufc.qxd.dsp.trabalho2.util.Menu;
 
 import javax.persistence.PersistenceException;
 import java.text.ParseException;

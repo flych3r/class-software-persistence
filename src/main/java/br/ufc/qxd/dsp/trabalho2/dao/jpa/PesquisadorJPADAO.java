@@ -1,8 +1,9 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.PesquisadorDAO;
-import jpa.JPAUtil;
-import model.*;
+import br.ufc.qxd.dsp.trabalho2.dao.PesquisadorDAO;
+import br.ufc.qxd.dsp.trabalho2.jpa.JPAUtil;
+import br.ufc.qxd.dsp.trabalho2.model.Pesquisador;
+import br.ufc.qxd.dsp.trabalho2.model.Projeto;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

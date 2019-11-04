@@ -1,6 +1,6 @@
 package br.ufc.qxd.dsp.trabalho2.dao;
 
-import model.Endereco;
+import br.ufc.qxd.dsp.trabalho2.model.Endereco;
 
 public interface EnderecoDAO extends GenericDAO<Endereco> {
 }

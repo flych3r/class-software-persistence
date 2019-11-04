@@ -1,7 +1,7 @@
 package br.ufc.qxd.dsp.trabalho2.dao;
 
-import model.Pesquisador;
-import model.Projeto;
+import br.ufc.qxd.dsp.trabalho2.model.Pesquisador;
+import br.ufc.qxd.dsp.trabalho2.model.Projeto;
 
 import java.util.List;
 

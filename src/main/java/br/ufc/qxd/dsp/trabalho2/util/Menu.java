@@ -1,8 +1,8 @@
 package br.ufc.qxd.dsp.trabalho2.util;
 
-import dao.*;
-import dao.jpa.*;
-import model.*;
+import br.ufc.qxd.dsp.trabalho2.dao.*;
+import br.ufc.qxd.dsp.trabalho2.dao.jpa.*;
+import br.ufc.qxd.dsp.trabalho2.model.*;
 
 import javax.persistence.PersistenceException;
 import javax.swing.*;

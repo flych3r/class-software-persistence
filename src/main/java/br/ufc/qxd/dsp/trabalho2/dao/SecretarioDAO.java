@@ -1,9 +1,6 @@
 package br.ufc.qxd.dsp.trabalho2.dao;
 
-import model.Funcionario;
-import model.Secretario;
-
-import java.util.List;
+import br.ufc.qxd.dsp.trabalho2.model.Secretario;
 
 public interface SecretarioDAO extends FuncionarioDAO<Secretario> {
 

@@ -1,13 +1,7 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.SecretarioDAO;
-import jpa.JPAUtil;
-import model.Funcionario;
-import model.Secretario;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import java.util.List;
+import br.ufc.qxd.dsp.trabalho2.dao.SecretarioDAO;
+import br.ufc.qxd.dsp.trabalho2.model.Secretario;
 
 public class SecretarioJPADAO extends FuncionarioJPADAO<Secretario> implements SecretarioDAO {
 

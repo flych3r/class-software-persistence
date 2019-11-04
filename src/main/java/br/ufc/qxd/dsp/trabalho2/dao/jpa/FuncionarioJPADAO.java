@@ -1,15 +1,13 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.FuncionarioDAO;
-import jpa.JPAUtil;
-import model.Dependente;
-import model.Funcionario;
-import model.Secretario;
+import br.ufc.qxd.dsp.trabalho2.dao.FuncionarioDAO;
+import br.ufc.qxd.dsp.trabalho2.jpa.JPAUtil;
+import br.ufc.qxd.dsp.trabalho2.model.Dependente;
+import br.ufc.qxd.dsp.trabalho2.model.Funcionario;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.List;
-
 
 public abstract class FuncionarioJPADAO<T> extends GenericJPADAO<T> implements FuncionarioDAO<T> {
 

@@ -1,7 +1,7 @@
 package br.ufc.qxd.dsp.trabalho2.dao.jpa;
 
-import dao.GenericDAO;
-import jpa.JPAUtil;
+import br.ufc.qxd.dsp.trabalho2.dao.GenericDAO;
+import br.ufc.qxd.dsp.trabalho2.jpa.JPAUtil;
 
 import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;

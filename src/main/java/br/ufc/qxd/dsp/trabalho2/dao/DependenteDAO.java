@@ -1,7 +1,6 @@
 package br.ufc.qxd.dsp.trabalho2.dao;
 
-import model.Dependente;
-import model.Funcionario;
+import br.ufc.qxd.dsp.trabalho2.model.Dependente;
 
 import java.util.List;
 
